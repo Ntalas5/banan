@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>nai</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Καλώς ήρθατε στον ιστότοπο "nai"</h1>
+
+  <img id="banana" src="banana.jpg" alt="Μπανάνα" style="cursor:pointer; max-width:300px;" />
+
+  <audio id="painSound" src="pain.mp3"></audio>
+
+  <script>
+    const banana = document.getElementById('banana');
+    const painSound = document.getElementById('painSound');
+
+    banana.addEventListener('click', () => {
+      painSound.currentTime = 0;
+      painSound.play();
+    });
+  </script>
+</body>
+</html>
